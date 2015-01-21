@@ -171,10 +171,11 @@
 	    </LinearLayout>
 	    
         <LinearLayout
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical" >
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:layout_weight="2"
+	    android:orientation="vertical" >
             
             <LinearLayout
 		    android:layout_width="fill_parent"
@@ -188,7 +189,14 @@
 			    android:layout_width="match_parent"
 			    android:layout_height="match_parent"
 			    android:orientation="vertical" >
-
+                
+	                <ImageView
+			        android:id="@+id/LblIcono2"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:adjustViewBounds="true"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/triangle"/>
 	
 	    			<TextView
 	    		    android:id="@+id/texSince"

@@ -497,13 +497,15 @@ android:background="@color/fondo">
 	            android:orientation="vertical" >
 	                
 	                <LinearLayout
-		            android:id="@+id/llCalendar"
-		            android:layout_width="match_parent"
-		            android:layout_height="match_parent"
-		            android:layout_weight="1"
-		            android:layout_marginBottom="5dp"
-		            android:background="@color/white"
-		            android:orientation="vertical" >
+	                    android:id="@+id/llCalendar"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_weight="1"
+	                    android:background="@color/white"
+	                    android:orientation="vertical"
+	                    android:scrollbarStyle="insideOverlay"
+	                    android:scrollbars="horizontal" >
 						
 	                    <CalendarView
 		                android:id="@+id/calendarView"
@@ -658,7 +660,7 @@ android:background="@color/fondo">
 		            android:background="@color/blue_hm" >
                         
                         <TextView 
-				        android:id="@+id/txtNoDisp"
+				        android:id="@+id/txtNoDisp1"
 				        android:layout_width="match_parent"
 				        android:layout_height="wrap_content"
 						android:text="CONSULTAR DISPONIBILIDAD"
