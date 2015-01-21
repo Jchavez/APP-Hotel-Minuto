@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/white"
+android:orientation="vertical" >
+
+  	<LinearLayout
+    android:id="@+id/contentText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:orientation="vertical" >
+    
+  	    <LinearLayout
+        android:id="@+id/contentText25"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+  	        <LinearLayout
+	        android:id="@+id/barraEspacio"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="50"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:background="@color/blue_hm" >
+	        </LinearLayout>
+	        
+  	        <LinearLayout
+	        android:id="@+id/linear25"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical">
+	        
+  	            <TextView
+	            android:id="@+id/txtPorCiento"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/porciento"
+	            android:textColor="@color/blue_hm"
+	            android:textSize="17sp" />
+            
+	            <TextView
+	            android:id="@+id/txtOcuparse"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/no_ocuparse"
+	            android:textColor="@color/blue_hm"
+	            android:textSize="17sp" />
+  	            
+	        </LinearLayout>
+
+            
+
+	    </LinearLayout>
+	    
+  	    <LinearLayout
+	    android:id="@+id/contentTextLCost"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:background="@color/blue_hm">
+            
+  	        <TextView
+            android:id="@+id/txtDisposicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disposicion"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+            
+            <TextView
+            android:id="@+id/txtLowCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/low_cost"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+  	        
+  	   </LinearLayout>
+  	    
+  	</LinearLayout>
+    
+  	<LinearLayout
+    android:id="@+id/contentVideoMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+  	    
+  	    
+	    <LinearLayout
+	    android:id="@+id/contentVideo"    
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_weight="1"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:background="@color/white">
+            
+	        
+	        <LinearLayout  
+	        android:id="@+id/contentBtnPlay"
+	        android:layout_height="match_parent" 
+		    android:layout_width="match_parent" 
+		    android:orientation="vertical" 
+		    android:layout_weight="1" 
+		    android:visibility="visible"
+		    android:gravity="center"
+		    android:background="@drawable/background_video" >
+		    
+	            <Button
+                android:id="@+id/bt_resfolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/playblue" >
+
+	   			</Button>
+	            
+		    </LinearLayout> 
+	                    
+	        <LinearLayout 
+	        android:id="@+id/contentBtnVideo"
+	        android:layout_height="match_parent" 
+		    android:layout_width="match_parent" 
+		    android:orientation="vertical" 
+		    android:layout_weight="500" 
+		    android:visibility="invisible"
+	    	android:gravity="center" >
+	            
+	            <VideoView 
+	   			android:id="@+id/video" 
+	   			android:fitsSystemWindows="true" 
+	   			android:layout_gravity="center" 
+	   			android:layout_height="fill_parent" 
+	   			android:layout_width="fill_parent">
+	   			</VideoView>
+	            
+			</LinearLayout>
+	        
+   			
+   			
+		</LinearLayout>
+	    
+  	    <LinearLayout
+	    android:id="@+id/contentMenu"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2.5"
+	    android:orientation="horizontal">
+            
+	  	    <LinearLayout
+  	        android:id="@+id/findMinuto"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="match_parent"
+  	        android:layout_weight="1"
+  	        android:background="@color/green_hm"
+  	        android:orientation="vertical"
+  	        android:gravity="center"
+  	        android:clickable="true" >
+  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+			    
+	  	            <ImageView
+	  	            android:id="@+id/btnLatMinute"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/reloj"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+			    </LinearLayout>
+			    
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/txtlatestMinute"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Buscador ultimo minuto"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp"
+	  	            android:gravity="center" />
+	  	            
+			    </LinearLayout>
+
+  	        </LinearLayout>
+		    
+	  	     <LinearLayout
+  	         android:id="@+id/findGeneral"
+  	         android:layout_width="match_parent"
+  	         android:layout_height="match_parent"
+  	         android:layout_weight="1"
+  	         android:background="@color/morado_hm"
+  	         android:gravity="center"
+  	         android:orientation="vertical"
+  	         android:clickable="true" >
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	  	            
+	  	            <ImageView
+	  	            android:id="@+id/btnGeneral"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/findgeneral"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+	  	        </LinearLayout>
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/txtGeneral"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Buscador\nGeneral"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp"
+	  	            android:gravity="center" />
+	  	            
+	  	        </LinearLayout> 
+	  	        	
+	  	     </LinearLayout>
+		    
+	  	    <LinearLayout
+  	        android:id="@+id/findPVacacionales"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@color/orange_hm"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:clickable="true" >
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	  	            
+	  	            <ImageView
+	  	            android:id="@+id/btnPVac"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/mirilla"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+	  	        </LinearLayout>
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/TextView03"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Vacaciones \ny escapadas"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp" 
+	  	            android:gravity="center"/> 
+	  	            
+	  	        </LinearLayout> 
+  	        	
+	  	     </LinearLayout>
+        
+        </LinearLayout>
+  	    
+  	</LinearLayout>
+    
+</LinearLayout>
+

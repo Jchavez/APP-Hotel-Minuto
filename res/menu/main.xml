@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  
+  <item
+  android:id="@+id/call"
+  android:icon="@drawable/phone"
+  android:showAsAction="ifRoom"
+  android:title="@string/phone"
+  android:visible="true"/> 
+  
+ <!-- <item
+  android:id="@+id/geo"
+  android:icon="@drawable/ubic"
+  android:showAsAction="ifRoom"
+  android:title="@string/ir_ubicacion"
+  android:visible="true"/> -->
+ 
+  <!--  <item android:id="@+id/action_websearch"
+  android:icon="@drawable/lupa"
+  android:title="@string/action_websearch"
+  android:showAsAction="always" />
+  
+   <item
+   android:id="@+id/action_websearch"
+   android:icon="@drawable/lupa"
+   android:title="@string/action_websearch"
+   android:showAsAction="ifRoom|collapseActionView"
+   android:actionViewClass="android.support.v7.widget.SearchView"/>
+   
+   <item
+   android:id="@+id/action_websearch"
+   android:title="@string/action_websearch"
+   android:icon="@drawable/lupa"
+   android:showAsAction="ifRoom"/>  -->
+   
+   <item
+    android:id="@+id/action_websearch"  
+    android:title="@string/action_websearch"
+    android:icon="@drawable/lupa"
+	android:actionViewClass="android.widget.SearchView"
+    android:showAsAction="always|never"
+    android:visible="false" />
+     
+</menu>
+
+
+

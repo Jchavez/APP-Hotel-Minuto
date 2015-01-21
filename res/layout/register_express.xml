@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical" >
+ 
+   <LinearLayout
+   android:id="@+id/llAccesoUser"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:layout_weight="1"
+   android:orientation="vertical"
+   android:gravity="center" >
+   
+       <LinearLayout
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:layout_weight="1"
+	   android:orientation="vertical"
+	   android:gravity="center"
+	   android:layout_marginLeft="35dp"
+	   android:layout_marginRight="35dp"
+	   android:layout_marginTop="15dp">
+	   
+           <LinearLayout
+		   android:layout_width="match_parent"
+		   android:layout_height="match_parent"
+		   android:layout_weight="5"
+		   android:orientation="vertical"
+		   android:gravity="center" >
+
+                <TextView
+                android:id="@+id/textAcceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESERVAR SIN REGISTRARTE"
+                android:textColor="@color/blue_hm"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+               
+		   </LinearLayout>
+		   
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginBottom="5dp"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical" >
+               
+               <LinearLayout
+			   android:layout_width="match_parent"
+			   android:layout_height="match_parent"
+			   android:layout_weight="1"
+			   android:orientation="vertical"
+			   android:gravity="center" >
+			   
+                   <EditText
+                   android:id="@+id/username"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp"
+                   android:background="@drawable/login_gap_w1"
+                   android:hint="  Nombre"
+                   android:inputType="textPersonName" />
+                   
+			   </LinearLayout>
+			   
+               <LinearLayout
+			   android:layout_width="match_parent"
+			   android:layout_height="match_parent"
+			   android:layout_weight="1"
+			   android:orientation="vertical"
+			   android:gravity="center" >
+			   
+                   <EditText
+                   android:id="@+id/apellidos"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp"
+                   android:background="@drawable/login_gap_w1"
+                   android:hint="  Apellidos"
+                   android:inputType="textPersonName" />
+                   
+			   </LinearLayout>
+			   
+               <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:orientation="vertical" >
+
+                   <EditText
+                   android:id="@+id/email"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp"
+                   android:background="@drawable/login_gap_w1"
+                   android:hint=" Email"
+                   android:inputType="textPassword" />
+                   
+               </LinearLayout>
+               
+               <LinearLayout
+			   android:layout_width="match_parent"
+			   android:layout_height="match_parent"
+			   android:layout_weight="1"
+			   android:orientation="vertical"
+			   android:gravity="center" >
+			   
+                   <EditText
+                   android:id="@+id/confirmEmail"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp"
+                   android:background="@drawable/login_gap_w1"
+                   android:hint="  Confirmar Email"
+                   android:inputType="textPersonName" />
+                   
+			   </LinearLayout>
+			   
+               <LinearLayout
+			   android:layout_width="match_parent"
+			   android:layout_height="match_parent"
+			   android:layout_weight="1"
+			   android:orientation="vertical"
+			   android:gravity="center" >
+			   
+                   <EditText
+                   android:id="@+id/telephone"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp"
+                   android:background="@drawable/login_gap_w1"
+                   android:hint="  Teléfono" 
+                   android:inputType="textPersonName" />
+                   
+			   </LinearLayout>
+               
+               <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:orientation="horizontal" >
+
+                   <LinearLayout
+	               android:layout_width="match_parent"
+	               android:layout_height="match_parent"
+	               android:layout_weight="1"
+	               android:gravity="center|left"
+	               android:orientation="vertical" >
+	               
+                       <RelativeLayout 
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"  >
+			    
+					    	<TextView
+					        android:id="@+id/textSuscribete"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerVertical="true"
+					        android:text="Suscríbete al boletín"
+					        android:textColor="@color/blue_hm"
+					        android:textSize="15sp"
+					        android:layout_marginLeft="0dp" />
+
+				  	    	<CheckBox
+				  	        android:id="@+id/checkBoxRecordarBoletin"
+				  	        android:layout_width="match_parent"
+				  	        android:layout_height="wrap_content"
+				  	        android:layout_alignParentLeft="true"
+				  	        android:layout_alignParentTop="true" 
+				  	        android:layout_marginLeft="132dp"
+				  	        android:checked="true"/>
+						    
+					   </RelativeLayout>
+                       
+                       
+				   </LinearLayout>
+				   
+                   <LinearLayout
+	               android:layout_width="match_parent"
+	               android:layout_height="match_parent"
+	               android:layout_weight="1.2"
+	               android:gravity="center|right"
+	               android:orientation="vertical" >
+                       
+                       <RelativeLayout 
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"  >
+			    
+					    	<TextView
+					        android:id="@+id/txtRecordarDatos"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerVertical="true"
+					        android:text="Recordar datos "
+					        android:textColor="@color/blue_hm"
+					        android:textSize="15sp"
+					        android:layout_marginLeft="5dp" />
+
+				  	    	<CheckBox
+				  	        android:id="@+id/checkBoxRecordarDatos"
+				  	        android:layout_width="match_parent"
+				  	        android:layout_height="wrap_content"
+				  	        android:layout_alignParentLeft="true"
+				  	        android:layout_alignParentTop="true" 
+				  	        android:layout_marginLeft="105dp"
+				  	        android:checked="true"/>
+						    
+					   </RelativeLayout>
+                       
+                   </LinearLayout>
+                   
+               </LinearLayout>
+
+            </LinearLayout>
+           
+	   </LinearLayout>
+	   
+       <LinearLayout
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:layout_weight="5"
+	   android:layout_marginLeft="35dp"
+	   android:layout_marginRight="35dp"
+	   android:orientation="vertical"
+	   android:gravity="center" >
+           
+           <LinearLayout
+		   android:layout_width="match_parent"
+		   android:layout_height="match_parent"
+		   android:layout_weight="1"
+		   android:orientation="vertical"
+		   android:gravity="center"
+		   android:layout_marginBottom="25dp"
+		   android:background="@color/blue_hm" >
+
+               <TextView
+		        android:id="@+id/txtResExpress"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:text="Continuar "
+		        android:textColor="@color/white"
+		        android:textSize="15sp" />
+
+		   </LinearLayout>
+           
+           
+	   </LinearLayout>
+       
+       
+   </LinearLayout>
+
+   <LinearLayout
+   android:id="@+id/llSesionReg"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:layout_weight="2"
+   android:gravity="center"
+   android:layout_marginLeft="35dp"
+   android:layout_marginRight="35dp"
+   android:orientation="vertical" >
+       
+   </LinearLayout>
+
+</LinearLayout>

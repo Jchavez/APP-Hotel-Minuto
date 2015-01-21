@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:id="@+id/contentDrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+    
+        <LinearLayout
+	    android:id="@+id/contentDropCountry"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+            <ExpandableListView
+	        android:id="@+id/lvExpCountry"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        style="@style/dividedListStyleExp"/> 
+            
+	    </LinearLayout>
+	    
+        <LinearLayout
+	    android:id="@+id/destinos"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center">
+	    
+            <TextView
+            android:id="@+id/txtDestinos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Destinos"
+            android:textColor="@color/blue_hm"
+            android:textSize="18sp"
+            android:typeface="sans"
+            android:gravity="center"
+            android:background="@drawable/img_fondo_2" />
+            
+	    </LinearLayout>
+	    
+        <LinearLayout
+	    android:id="@+id/contentCities"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingLeft="7dp"
+	    android:paddingRight="7dp"  >
+            
+           <ExpandableListView
+	        android:id="@+id/lvExpCity"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:cacheColorHint="#00000000"
+	        android:divider="@drawable/child_separator_blue"
+	        android:childDivider="@drawable/child_separator_white"/> 
+            
+    	</LinearLayout>
+       
+    </LinearLayout>
+    
+    <LinearLayout
+    android:id="@+id/contentMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4.15"
+    android:orientation="horizontal">
+            
+	  	    <LinearLayout
+  	        android:id="@+id/findMinuto"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="match_parent"
+  	        android:layout_weight="1"
+  	        android:background="@color/green_hm"
+  	        android:orientation="vertical"
+  	        android:gravity="center"
+  	        android:clickable="true" >
+  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+			    
+	  	            <ImageView
+	  	            android:id="@+id/btnLatMinute"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/reloj"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+			    </LinearLayout>
+			    
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/txtlatestMinute"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Buscador ultimo minuto"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp"
+	  	            android:gravity="center" />
+	  	            
+			    </LinearLayout>
+
+  	        </LinearLayout>
+		    
+	  	     <LinearLayout
+  	         android:id="@+id/findGeneral"
+  	         android:layout_width="match_parent"
+  	         android:layout_height="match_parent"
+  	         android:layout_weight="1"
+  	         android:background="@color/morado_hm"
+  	         android:gravity="center"
+  	         android:orientation="vertical"
+  	         android:clickable="true" >
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	  	            
+	  	            <ImageView
+	  	            android:id="@+id/btnGeneral"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/findgeneral"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+	  	        </LinearLayout>
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/txtGeneral"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Buscador\nGeneral"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp"
+	  	            android:gravity="center" />
+	  	            
+	  	        </LinearLayout> 
+	  	        	
+	  	     </LinearLayout>
+		    
+	  	    <LinearLayout
+  	        android:id="@+id/findPVacacionales"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@color/orange_hm"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:clickable="true" >
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	  	            
+	  	            <ImageView
+	  	            android:id="@+id/btnPVac"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/mirilla"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+	  	        </LinearLayout>
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/TextView03"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Paquetes Vacacionales"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp" 
+	  	            android:gravity="center"/> 
+	  	            
+	  	        </LinearLayout> 
+  	        	
+	  	     </LinearLayout>
+        
+        </LinearLayout>
+
+</LinearLayout>

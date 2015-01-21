@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HotelMinuto</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="list_title_drawer">
+        <item>HOME</item>
+        <item>INICIAR SESIÓN</item>
+        <item>ÚLTIMO MINUTO</item>
+        <item>BÚSQUEDA GENERAL</item>
+        <item>VACACIONES Y ESCAPADAS</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="ir_ubicacion">Ir ubicación</string>
+    <string name="phone">Teléfono</string>
+    <string name="porciento">Más del 25% de las Habitaciones de</string>
+    <string name="no_ocuparse">los Hoteles no llegan a ocuparse</string>
+    <string name="disposicion">Te las ofrecemos a Tarifas</string>
+    <string name="low_cost">LOW COST</string>
+    <string name="title_activity_view_last_minute_city">ViewLastMinuteCity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_view_resul_general">ViewResulGeneralActivity</string>
+    <string name="mapas"> Mapas </string>
+    <string name="exit">Cerrar</string>
+    <string name="opiniones"> Opiniones </string>
+    <string name="fotos"> Fotos </string>
+    <string name="des_img"> Description images </string>
+    <string name="txt_datos_olvidado"><u>Olvidé mi contraseña</u> </string>
+
+   <string-array name="NumeberHabs">
+        <item>Habt. 1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="NumberAdulto">
+        <item>Adultos 2</item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+        <item>6 </item>
+    </string-array>
+    <string-array name="Children">
+        <item>Niños 0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="AgeNinoOne">
+        <item>Edad Niño 1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="AgeNinoTwo">
+        <item>Edad Niño 2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="TypeHabs">
+        <item>Simple</item>
+        <item>Doble</item>
+    </string-array>
+    
+    <string-array name="Regimen">
+        <item>Regimen1</item>
+        <item>Regimen2</item>
+    </string-array>
+
+    <string name="title_activity_init_session">InitSessionActivity</string>
+    <string name="title_activity_view_details_general">ViewDetailsGeneralActivity</string>
+    <string name="title_activity_view_details_vac">ViewDetailsVacActivity</string>
+
+</resources>

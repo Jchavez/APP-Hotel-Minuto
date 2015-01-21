@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_general"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+       
+        <LinearLayout
+        android:id="@+id/findImageFind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+            <LinearLayout
+            android:id="@+id/barraEspacio"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/blue_hm"
+            android:gravity="center"
+            android:orientation="vertical" >
+			</LinearLayout>
+        
+            <LinearLayout
+	        android:id="@+id/imag"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:background="@drawable/img_gen"
+	        android:gravity="center" >
+	        </LinearLayout>
+	        
+            <LinearLayout
+            android:id="@+id/find"    
+	        android:layout_width="match_parent"
+	       	android:layout_height="match_parent"
+	       	android:layout_weight="2.5"
+	       	android:orientation="horizontal"
+	       	android:background="@color/white">
+                     
+                    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="3.5"
+			        android:orientation="horizontal">
+			        </LinearLayout>
+                    
+                    	<LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent"
+				        android:layout_weight="1"
+				        android:orientation="horizontal"
+				        android:gravity="center|left">
+                        
+	                        <EditText
+						    android:id="@+id/edtDestino"
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:hint="Buscar destino..."
+						    android:textColorHint="@color/blue_hm"
+						    android:inputType="text"
+						    android:ellipsize="end"
+						    android:textColor="@color/blue_hm"
+						    android:background="#FFFFFF"/>
+                        
+                    	</LinearLayout>
+                    
+                    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="3.5"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        android:orientation="horizontal"
+			        android:gravity="center">
+                        
+                         <Button
+	                     android:id="@+id/button_lupe"
+	                     android:layout_width="wrap_content"
+	                     android:layout_height="wrap_content"
+	                     android:background="@drawable/lupa"/>
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="3.5"
+			        android:orientation="horizontal">
+                    </LinearLayout>
+                     
+                </LinearLayout>
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/botonera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+            
+             <LinearLayout
+	         android:id="@+id/contentCalendario"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:layout_weight="1"
+	         android:gravity="center"
+	         android:orientation="vertical" >
+                    
+                 <LinearLayout
+                 android:id="@+id/btnCalendario"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:layout_margin="2dp"
+                 android:gravity="center"
+                 android:orientation="horizontal">
+                         
+                     <LinearLayout
+			         android:id="@+id/calendStart"
+			         android:layout_width="match_parent"
+			         android:layout_height="match_parent"
+			         android:layout_weight="1"
+			         android:paddingRight="5dp"
+				     android:gravity="center"
+			         android:orientation="vertical"
+			         android:clickable="true">
+			         
+                         <LinearLayout
+				         android:layout_width="match_parent"
+				         android:layout_height="match_parent"
+				         android:layout_weight="7"
+				         android:gravity="center"
+				         android:orientation="vertical" >
+				         </LinearLayout>
+		         
+		                 <LinearLayout
+				         android:id="@+id/findCalendStart"
+				         android:layout_width="match_parent"
+				         android:layout_height="match_parent"
+				         android:layout_weight="1"
+				         android:paddingRight="10dp"
+				         android:gravity="center"
+				         android:orientation="vertical"
+				         android:background="@color/white">
+				         
+		                     
+		                     <LinearLayout
+					         android:layout_width="match_parent"
+					         android:layout_height="match_parent"
+					         android:layout_weight="2"
+					         android:gravity="center"
+					         android:orientation="vertical" >
+					         
+		                        <TextView
+					            android:id="@+id/txtStart"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text=">>Entrada"
+					            android:textColor="@color/blue_hm"
+					            android:textSize="15sp"
+					            android:typeface="sans" />
+		                         
+		                         
+					         </LinearLayout>
+					         
+		                     <LinearLayout
+	                         android:layout_width="match_parent"
+	                         android:layout_height="match_parent"
+	                         android:layout_weight="1"
+	                         android:gravity="center"
+	                         android:orientation="horizontal" >
+		                       
+		                        <LinearLayout
+						        android:layout_width="match_parent"
+						        android:layout_height="match_parent"
+						        android:layout_weight="1"
+						        android:gravity="center"
+						        android:orientation="vertical" >
+						        
+		                            <TextView
+						            android:id="@+id/txtCalendarStart"
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="14.FEB.14"
+						            android:textColor="@color/blue_hm"
+						            android:textSize="20sp"
+						            android:typeface="sans" />
+		                            
+						        </LinearLayout>
+						        
+		                        <LinearLayout
+						        android:layout_width="match_parent"
+						        android:layout_height="match_parent"
+						        android:layout_weight="3"
+						        android:gravity="center"
+						        android:orientation="vertical" >
+		                            
+		                            <ImageView
+								    android:id="@+id/btnChangeDateStart"
+								    android:layout_width="25dp"
+								    android:layout_height="25dp"
+								    android:background="@drawable/calendar"
+								    android:contentDescription="@string/des_img"/>
+		                            
+		                       </LinearLayout>
+
+		                     </LinearLayout>
+		                     
+		                 </LinearLayout>
+		         
+		                 <LinearLayout
+				         android:layout_width="match_parent"
+				         android:layout_height="match_parent"
+				         android:layout_weight="7"
+				         android:gravity="center"
+				         android:orientation="vertical" >
+				         </LinearLayout>
+                         
+                     </LinearLayout>
+			         
+                     <LinearLayout
+			         android:id="@+id/calendExit"
+			         android:layout_width="match_parent"
+			         android:layout_height="match_parent"
+			         android:layout_weight="1"
+			         android:paddingLeft="5dp"
+				     android:gravity="center"
+			         android:orientation="vertical"
+			         android:clickable="true">
+		                 
+                         <LinearLayout
+				         android:layout_width="match_parent"
+				         android:layout_height="match_parent"
+				         android:layout_weight="7"
+				         android:gravity="center"
+				         android:orientation="vertical" >
+				         </LinearLayout>
+		         
+		                 <LinearLayout
+				         android:id="@+id/findCalendStart0"
+				         android:layout_width="match_parent"
+				         android:layout_height="match_parent"
+				         android:layout_weight="1"
+				         android:gravity="center"
+				         android:orientation="vertical"
+				         android:background="@color/white" >
+		                     
+		                     
+		                     <LinearLayout
+					         android:layout_width="match_parent"
+					         android:layout_height="match_parent"
+					         android:layout_weight="2"
+					         android:gravity="center"
+					         android:orientation="vertical" >
+					         
+		                        <TextView
+					            android:id="@+id/txtExit"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="Salida>>"
+					            android:textColor="@color/blue_hm"
+					            android:textSize="15sp"
+					            android:typeface="sans" />
+		                         
+		                         
+					         </LinearLayout>
+					         
+		                     <LinearLayout
+		                         android:layout_width="match_parent"
+		                         android:layout_height="match_parent"
+		                         android:layout_weight="1"
+		                         android:gravity="center"
+		                         android:orientation="horizontal" >
+		                        
+		                        <LinearLayout
+						        android:layout_width="match_parent"
+						        android:layout_height="match_parent"
+						        android:layout_weight="3"
+						        android:gravity="center|right"
+						        android:orientation="vertical" >
+		                            
+		                            <ImageView
+								    android:id="@+id/btnChangeDateExit"
+								    android:layout_width="25dp"
+								    android:layout_height="25dp"
+								    android:background="@drawable/calendar"
+									android:contentDescription="@string/des_img"/>
+		                            
+						        </LinearLayout>
+		                         
+		                        
+		                        <LinearLayout
+						        android:layout_width="match_parent"
+						        android:layout_height="match_parent"
+						        android:layout_weight="1"
+						        android:gravity="center"
+						        android:orientation="vertical" >
+						        
+		                            <TextView
+						            android:id="@+id/txtCalendarExit"
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="16.FEB.14"
+						            android:textColor="@color/blue_hm"
+						            android:textSize="20sp"
+						            android:typeface="sans" />
+		                            
+						        </LinearLayout>
+						        
+		                     </LinearLayout>
+		                     
+		                 </LinearLayout>
+		         
+		                 <LinearLayout
+				         android:layout_width="match_parent"
+				         android:layout_height="match_parent"
+				         android:layout_weight="7"
+				         android:gravity="center"
+				         android:orientation="vertical" >
+				         </LinearLayout>
+                         
+                     </LinearLayout>
+                     
+                 </LinearLayout>
+		         
+                 <LinearLayout
+                  android:id="@+id/ContentHabNin"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:orientation="vertical" >
+                     
+                     <LinearLayout
+                     android:id="@+id/HabNin"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:orientation="horizontal" >
+
+                         <Spinner
+                         android:id="@+id/spHabs"
+                         android:paddingLeft="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="50dp"
+                         android:layout_weight="1"
+                         android:layout_margin="5dp"
+                         android:spinnerMode="dialog"
+                         android:gravity="left|center_vertical"
+                         android:background="@drawable/button2_w"
+                         android:textSize="15sp" />
+                         
+                         <Spinner
+                         android:id="@+id/spAdulto"
+                         android:layout_width="wrap_content"
+                         android:layout_height="50dp"
+                         android:paddingRight="15dp"
+                         android:background="@drawable/button2_w"
+                         android:spinnerMode="dialog"
+                         android:layout_margin="5dp"
+                         android:layout_weight="1" />
+
+                         <Spinner
+                         android:id="@+id/spChildren"
+                         android:layout_width="wrap_content"
+                         android:layout_height="50dp"
+                         android:paddingRight="8dp"
+                         android:background="@drawable/button2_w"
+                         android:spinnerMode="dialog"
+                         android:layout_margin="5dp"
+                         android:layout_weight="1"/>
+                     </LinearLayout>
+			         
+                     <LinearLayout
+                     android:id="@+id/contentAgeNino"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:orientation="horizontal" >
+                         
+                         <LinearLayout
+                         android:id="@+id/ageNinoOne"    
+	                     android:layout_width="match_parent"
+	                     android:layout_height="match_parent"
+	                     android:layout_weight="1"
+	                     android:layout_margin="5dp"
+	                     android:gravity="center"
+	                     android:orientation="horizontal"
+	                     android:background="@color/white">
+		                     
+	                         <Spinner
+	                         android:id="@+id/spAgeNinoOne"
+	                         android:layout_width="wrap_content"
+	                         android:layout_height="50dp"
+	                         android:paddingRight="15dp"
+	                         android:spinnerMode="dialog"
+	                         android:background="@drawable/button3_w"
+	                         android:layout_margin="5dp"
+	                         android:layout_weight="1"
+	                         android:clickable="false" />    
+                             
+                             
+		                 </LinearLayout> 
+		                 
+                         <LinearLayout
+                         android:id="@+id/ageNinoTwo"     
+	                     android:layout_width="match_parent"
+	                     android:layout_height="match_parent"
+	                     android:layout_weight="1"
+	                     android:layout_margin="5dp"
+	                     android:gravity="center"
+	                     android:orientation="horizontal"
+	                     android:background="@color/white"  >
+			                 
+	                         <Spinner
+	                         android:id="@+id/spAgeNinoTwo"
+	                         android:layout_width="wrap_content"
+	                         android:layout_height="50dp"
+	                         android:paddingRight="15dp"
+	                         android:spinnerMode="dialog"
+	                         android:background="@drawable/button3_w"
+	                         android:layout_margin="5dp"
+	                         android:layout_weight="1"
+	                         android:clickable="false" />   
+                             
+                        </LinearLayout>
+                         
+                     </LinearLayout>
+                     
+                 </LinearLayout>
+                 
+             </LinearLayout>
+	         
+             <LinearLayout
+	         android:id="@+id/contentBuscar"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:layout_weight="4"
+	         android:layout_margin="5dp"
+	         android:gravity="center"
+	         android:orientation="vertical" >
+                    
+                 <LinearLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:layout_weight="5"
+		         android:gravity="center"
+		         android:orientation="vertical" >
+		         </LinearLayout>
+		         
+                 <LinearLayout
+		         android:id="@+id/buscar"
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:layout_weight="1"
+		         android:gravity="center"
+		         android:orientation="vertical" >
+                         
+                    <Button
+	  	            android:id="@+id/btnFindGen"
+	  	            style="?android:attr/buttonStyleSmall"
+	  	            android:layout_width="match_parent"
+	  	            android:layout_height="match_parent"
+	  	            android:text="Buscar"
+	  	            android:textSize="18sp"
+	  	            android:textColor="@color/white"
+	  	            android:background="@color/blue_hm" />
+                     
+                     
+		         </LinearLayout>
+		         
+                 <LinearLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:layout_weight="5"
+		         android:gravity="center"
+		         android:orientation="vertical" >
+		         </LinearLayout>
+                 
+                 
+	         </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+   <LinearLayout
+    android:id="@+id/contentMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4.15"
+    android:orientation="horizontal">
+            
+	  	    <LinearLayout
+  	        android:id="@+id/findMinuto"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="match_parent"
+  	        android:layout_weight="1"
+  	        android:background="@color/green_hm"
+  	        android:orientation="vertical"
+  	        android:gravity="center"
+  	        android:clickable="true" >
+  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+			    
+	  	            <ImageView
+	  	            android:id="@+id/btnLatMinute"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/reloj"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+			    </LinearLayout>
+			    
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/txtlatestMinute"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Buscador ultimo minuto"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp"
+	  	            android:gravity="center" />
+	  	            
+			    </LinearLayout>
+
+  	        </LinearLayout>
+		    
+	  	     <LinearLayout
+  	         android:id="@+id/findGeneral"
+  	         android:layout_width="match_parent"
+  	         android:layout_height="match_parent"
+  	         android:layout_weight="1"
+  	         android:background="@color/morado_hm"
+  	         android:gravity="center"
+  	         android:orientation="vertical"
+  	         android:clickable="true" >
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	  	            
+	  	            <ImageView
+	  	            android:id="@+id/btnGeneral"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/findgeneral"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+	  	        </LinearLayout>
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/txtGeneral"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Buscador\nGeneral"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp"
+	  	            android:gravity="center" />
+	  	            
+	  	        </LinearLayout> 
+	  	        	
+	  	     </LinearLayout>
+		    
+	  	    <LinearLayout
+  	        android:id="@+id/findPVacacionales"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@color/orange_hm"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:clickable="true" >
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	  	            
+	  	            <ImageView
+	  	            android:id="@+id/btnPVac"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:background="@drawable/mirilla"
+	  	            android:contentDescription="@string/des_img" />
+	  	            
+	  	        </LinearLayout>
+	  	        
+	  	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.5"
+			    android:orientation="horizontal"
+			    android:gravity="center|top">
+	  	            
+	  	            <TextView
+	  	            android:id="@+id/TextView03"
+	  	            android:layout_width="wrap_content"
+	  	            android:layout_height="wrap_content"
+	  	            android:text="Paquetes Vacacionales"
+	  	            android:textColor="@color/white"
+	  	            android:textSize="12sp" 
+	  	            android:gravity="center"/> 
+	  	            
+	  	        </LinearLayout> 
+  	        	
+	  	     </LinearLayout>
+        
+        </LinearLayout>
+
+</LinearLayout>

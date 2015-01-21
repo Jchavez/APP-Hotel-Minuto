@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp" >
+    
+    <LinearLayout
+    android:id="@+id/llrecordarPass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center|left"
+    android:orientation="vertical" >
+    
+        <TextView
+        android:id="@+id/txtRecordarPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECORDAR CONTRASEÑA"
+        android:textColor="@color/blue_hm"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+    android:id="@+id/llEmail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center|left"
+    android:orientation="vertical" >
+        
+        <EditText
+        android:id="@+id/email_recordar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/login_gap_w1"
+        android:hint="  Email"
+        android:inputType="textEmailAddress" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+    android:id="@+id/llBotonera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+        <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:text="Cancelar"
+        android:textColor="@color/white"
+        android:background="@color/black" />
+
+        <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Aceptar"
+        android:textColor="@color/white"
+        android:background="@color/blue_hm" />
+
+    </LinearLayout>
+    
+</LinearLayout>
+	
+
+
