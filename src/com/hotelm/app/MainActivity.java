@@ -91,6 +91,7 @@ public class MainActivity extends FragmentActivity
                 	getActionBar().setTitle(null);
                 	getActionBar().setIcon(R.drawable.logo_comp);
                 	
+                	
                 }else
                 {
                 	getActionBar().setTitle(mTitle);

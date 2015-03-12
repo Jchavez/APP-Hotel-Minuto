@@ -497,20 +497,27 @@ android:background="@color/fondo">
 	            android:orientation="vertical" >
 	                
 	                <LinearLayout
-	                    android:id="@+id/llCalendar"
-	                    android:layout_width="match_parent"
-	                    android:layout_height="match_parent"
-	                    android:layout_marginBottom="5dp"
-	                    android:layout_weight="1"
-	                    android:background="@color/white"
-	                    android:orientation="vertical"
-	                    android:scrollbarStyle="insideOverlay"
-	                    android:scrollbars="horizontal" >
-						
+		            android:id="@+id/llCalendar"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:layout_marginBottom="3dp"
+		            android:background="@color/white"
+		            android:orientation="vertical" >
+						<!-- 
 	                    <CalendarView
 		                android:id="@+id/calendarView"
 		                android:layout_width="match_parent"
-		                android:layout_height="match_parent" />
+		                android:layout_height="match_parent" 
+		                />
+		                
+		                -->
+		                <com.tyczj.extendedcalendarview.ExtendedCalendarView 
+						android:id="@+id/calendarView"
+						android:layout_height="match_parent"
+						android:layout_width="match_parent"/>
+		                
+			
 	                    
 		            </LinearLayout>
 		            
@@ -609,6 +616,57 @@ android:background="@color/fondo">
 	            android:layout_height="match_parent"
 	            android:layout_weight="2.5"
 	            android:orientation="vertical" >
+
+                    <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:orientation="horizontal" >
+                        
+                          	<LinearLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="match_parent"
+				            android:layout_weight="1"
+				            android:gravity="center"
+						    android:orientation="horizontal" >
+		                        <TextView
+	                            android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+								android:text="  Nº Habs"
+						        android:textSize="10sp"
+						        android:textColor="@color/blue_hm"/>
+                        	</LinearLayout>
+                        
+                         	<LinearLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="match_parent"
+				            android:layout_weight="1"
+				            android:gravity="center"
+						    android:orientation="horizontal" >
+                                <TextView
+	                            android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+	                        	android:text="  Tipo de Habit."
+	                        	android:textSize="10sp"
+						        android:textColor="@color/blue_hm"/>
+                        </LinearLayout>
+                        
+                        	<LinearLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="match_parent"
+				            android:layout_weight="1"
+				            android:gravity="center"
+						    android:orientation="horizontal" >
+                        
+		                        <TextView
+		                        android:layout_width="match_parent"
+							    android:layout_height="wrap_content"
+		                       	android:text="  Regimen"
+		                       	android:textSize="10sp"
+							    android:textColor="@color/blue_hm"/>
+                         </LinearLayout>
+                        
+                    </LinearLayout>
 	                
                     <LinearLayout
 		            android:id="@+id/llSpinners"
@@ -663,7 +721,7 @@ android:background="@color/fondo">
 				        android:id="@+id/txtNoDisp1"
 				        android:layout_width="match_parent"
 				        android:layout_height="wrap_content"
-						android:text="CONSULTAR DISPONIBILIDAD"
+						android:text="RESERVAR"
 						android:gravity="center"
 		            	android:textSize="15sp"
 		            	android:textStyle="bold"

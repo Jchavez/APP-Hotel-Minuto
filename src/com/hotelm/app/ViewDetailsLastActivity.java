@@ -120,14 +120,15 @@ public class ViewDetailsLastActivity extends Activity implements LocationListene
         	@Override
 	    	public void onClick(View v) 
 	        {
+        		contentMapOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
+        		
         		contentBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,500));
         		contentBotonera.setVisibility(View.INVISIBLE);
         		
-        		contentMapOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
-        		contentMapBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,12));
-        		
+        		contentMapBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,12));       		
         		btnMaps.setVisibility(View.INVISIBLE);
         		btnOpiniones.setVisibility(View.INVISIBLE);
+        		
         		paramsllBtnMaps.setMargins(0, 0, 0, 0);
         		llMaps.setLayoutParams(paramsllBtnMaps);
         		llExit.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
@@ -146,8 +147,31 @@ public class ViewDetailsLastActivity extends Activity implements LocationListene
         	@Override
 	    	public void onClick(View v) 
 	        {
+        		contentMapOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
+	        		llContentMapas.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,500));
+	        		llContentMapas.setVisibility(View.INVISIBLE);
+        		
+        			contentMapBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,12));
+	        			//hidden
+	        			btnMaps.setVisibility(View.INVISIBLE);
+	        			btnOpiniones.setVisibility(View.INVISIBLE);
+	        			paramsllBtnMaps.setMargins(0, 0, 0, 0);
+	            		llMaps.setLayoutParams(paramsllBtnMaps);
+	        			//show
+	        			llExit.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
+	        			llExit.setVisibility(View.VISIBLE);
+	        		       			
+	        		llContentOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
+        			llContentOpiniones.setVisibility(View.VISIBLE);
+        			
         		contentBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,500));
         		contentBotonera.setVisibility(View.INVISIBLE);
+        		
+        		
+        		
+        		/*
+        		--contentBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,500));
+        		--contentBotonera.setVisibility(View.INVISIBLE);
         		
         		contentMapOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
         		contentMapBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,12));
@@ -162,6 +186,7 @@ public class ViewDetailsLastActivity extends Activity implements LocationListene
         		llContentMapas.setVisibility(View.INVISIBLE);
         		llContentOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
         		llContentOpiniones.setVisibility(View.VISIBLE);
+        		*/
         	}
     	});
 		
@@ -169,7 +194,29 @@ public class ViewDetailsLastActivity extends Activity implements LocationListene
 
             @Override
             public void onClick(View v) 
-            {
+            {	         	            	
+            	contentMapOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,(float) 3));            	          	
+	            	llContentMapas.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
+	        		llContentMapas.setVisibility(View.VISIBLE);
+            		
+	        		contentMapBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,(float) 2.5));
+	            		btnMaps.setVisibility(View.VISIBLE);
+	            		btnOpiniones.setVisibility(View.VISIBLE);
+	            		llExit.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,50));
+	            		paramsllBtnMaps.setMargins(0, 0, 10, 0);
+	            		llMaps.setLayoutParams(paramsllBtnMaps);
+	            		
+            		llContentOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,500));
+        			llContentOpiniones.setVisibility(View.INVISIBLE);
+            		
+        		contentBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,1));
+        		contentBotonera.setVisibility(View.VISIBLE);
+        		
+        		
+        		
+        		
+        		
+            	/*
             	contentMapBotonera.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,(float) 2.5));
         		contentMapOpiniones.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,(float) 3));
         		
@@ -182,6 +229,7 @@ public class ViewDetailsLastActivity extends Activity implements LocationListene
         		llMaps.setLayoutParams(paramsllBtnMaps);
         		
         		llExit.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT,50));
+        		*/
         	}
         });
 		

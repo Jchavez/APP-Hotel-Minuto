@@ -33,7 +33,7 @@
     <string name="txt_datos_olvidado"><u>Olvidé mi contraseña</u> </string>
 
    <string-array name="NumeberHabs">
-        <item>Habt. 1</item>
+        <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
@@ -84,13 +84,14 @@
         <item>12</item>
     </string-array>
     <string-array name="TypeHabs">
-        <item>Simple</item>
         <item>Doble</item>
+        <item>Simple</item>
     </string-array>
     
     <string-array name="Regimen">
-        <item>Regimen1</item>
-        <item>Regimen2</item>
+        <item>Desayuno</item>
+        <item>Almuerzo</item>
+        <item>Cena</item>
     </string-array>
 
     <string name="title_activity_init_session">InitSessionActivity</string>

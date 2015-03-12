@@ -572,14 +572,14 @@
 					        android:textColor="@color/white" />
 						    
 					  	    <CheckBox
-					        android:id="@+id/checkBoxToday"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"
-					        android:layout_alignParentRight="true"
-					        android:layout_centerVertical="true"
-					        android:layout_marginRight="5dp"
-					        android:button="@drawable/checkbox_background"
-					        android:checked="true"/>
+					  	        android:id="@+id/checkBoxToday"
+					  	        android:layout_width="wrap_content"
+					  	        android:layout_height="wrap_content"
+					  	        android:layout_alignParentRight="true"
+					  	        android:layout_centerVertical="true"
+					  	        android:layout_marginRight="5dp"
+					  	        android:background="@color/white"
+					  	        android:checked="true" />
 						    
 						 </RelativeLayout>
                         
@@ -623,13 +623,13 @@
 					        android:textColor="@color/white" />
 						    
 					  	    <CheckBox
-					        android:id="@+id/checkBoxTomorrow"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"
-					        android:layout_alignParentRight="true"
-					        android:layout_centerVertical="true"
-					        android:button="@drawable/checkbox_background"
-					        android:layout_marginRight="5dp" />
+					  	        android:id="@+id/checkBoxTomorrow"
+					  	        android:layout_width="wrap_content"
+					  	        android:layout_height="wrap_content"
+					  	        android:layout_alignParentRight="true"
+					  	        android:layout_centerVertical="true"
+					  	        android:layout_marginRight="5dp"
+					  	        android:background="@color/white" />
 						    
 						 </RelativeLayout>
 	            	    
@@ -672,13 +672,13 @@
 					        android:textColor="@color/white" />
 						    
 					  	    <CheckBox
-					        android:id="@+id/checkBoxlastTomorrow"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"
-					        android:layout_alignParentRight="true"
-					        android:layout_centerVertical="true"
-					        android:button="@drawable/checkbox_background"
-					        android:layout_marginRight="5dp"/>
+					  	        android:id="@+id/checkBoxlastTomorrow"
+					  	        android:layout_width="wrap_content"
+					  	        android:layout_height="wrap_content"
+					  	        android:layout_alignParentRight="true"
+					  	        android:layout_centerVertical="true"
+					  	        android:layout_marginRight="5dp"
+					  	        android:background="@color/white" />
 						    
 						 </RelativeLayout>
 	            	    
@@ -724,12 +724,12 @@
 				    android:background="@color/white">
 				        
 				        <Button
-			            android:id="@+id/btnGo"
-			            android:layout_width="wrap_content"
-			            android:layout_height="wrap_content"
-			            android:text="Siguiente"
-			            android:textColor="@color/gray"
-			            android:background="@color/white" />
+				            android:id="@+id/btnGo"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:background="@color/white"
+				            android:text="Reservar"
+				            android:textColor="@color/gray" />
 				        
 				    </LinearLayout>
                     

@@ -1,8 +1,11 @@
 package com.hotelm.app;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.TimeZone;
 
+import com.google.android.gms.games.event.Event;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -10,6 +13,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.hotelm.adapter.ListOpinionesAdapter;
 import com.hotelm.clases.Opiniones;
+import com.tyczj.extendedcalendarview.ExtendedCalendarView;
 
 import android.location.Address;
 import android.location.Criteria;
@@ -21,6 +25,7 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.util.Log;
@@ -86,6 +91,8 @@ public class ViewDetailsVacActivity extends Activity implements LocationListener
 		txtVZone.setText(strZone);
 		txtVAdultos.setText(strAdultos);
 		txtVNights.setText(strNights);
+		
+		ExtendedCalendarView newCalendar = (ExtendedCalendarView)findViewById(R.id.calendarView);
 		
 		contentBotonera     = (LinearLayout)findViewById(R.id.contentBotonera);
 		contentMapBotonera  = (LinearLayout)findViewById(R.id.contentMapBotonera);
@@ -295,6 +302,8 @@ public class ViewDetailsVacActivity extends Activity implements LocationListener
 	    
 		adapterRegimen.setDropDownViewResource(R.layout.textview_spinner);
 		spReg.setAdapter(adapterRegimen);
+		
+
 	    
 	}
 	
@@ -325,7 +334,10 @@ public class ViewDetailsVacActivity extends Activity implements LocationListener
 		 actionBar = getActionBar();
 	     actionBar.setHomeButtonEnabled(true);
 	     actionBar.setDisplayHomeAsUpEnabled(true);
-	     actionBar.setTitle("DETALLE VAC. Y ESCAPADAS");
+	     //actionBar.setTitle("DETALLE VAC. Y ESCAPADAS");
+	     getValueResult();
+	    String zona="test";
+	     actionBar.setTitle(strZone);
 	}
 	
 	@Override

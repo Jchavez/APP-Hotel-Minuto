@@ -19,10 +19,11 @@
 	    android:orientation="vertical" >
 	    
             <ExpandableListView
-	        android:id="@+id/lvExpCountry"
-	        android:layout_height="match_parent"
-	        android:layout_width="match_parent"
-	        style="@style/dividedListStyleExp"/> 
+                android:id="@+id/lvExpCountry"
+                style="@style/dividedListStyleExp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center" />
             
 	    </LinearLayout>
 	    
@@ -66,7 +67,9 @@
                    android:layout_height="wrap_content"
                    android:cacheColorHint="#00000000"
                    android:childDivider="@drawable/child_separator_white"
-                   android:divider="@drawable/child_separator_blue">
+                   android:divider="@drawable/child_separator_blue"
+                   android:textAlignment="center" >
+
                </ExpandableListView>
 
 
